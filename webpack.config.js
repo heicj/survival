@@ -38,7 +38,10 @@ module.exports = {
         use: [
           {
             loader: 'style-loader',
-            options: { sourceMap: true }
+            options: {
+              injectType: 'singletonStyleTag'
+          }
+            // options: { sourceMap: true }
           },
           {
             loader: 'css-loader',
