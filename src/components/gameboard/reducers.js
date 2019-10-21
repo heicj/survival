@@ -16,7 +16,13 @@ const initialState = [
 export function gameboardState(state = initialState, { type, payload }){
   switch(type){
     case UPDATE_GAMEBOARD_TILE:
-      return state.map((tile, i) => {payload.id == i ? { ...tile, ...payload } : tile; });
+      return state.map((tile) => {
+        if(payload.id == tile.id){ 
+          return { ...tile, ...payload.value };
+        } else {
+          return tile;
+        }
+      });
     default:
       return state;
   }
