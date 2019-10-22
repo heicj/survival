@@ -1,0 +1,7 @@
+#gameboard{
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    grid-template-columns: repeat(10, 1fr);
+}
+

@@ -6,11 +6,13 @@
             "browsers": "Chrome 60"
           }
         }
-      ], 
-      "react"
+      ],
+      "react",
+      // "@babel/env",
+      // "@babel/react",
     ],
     "plugins": [
       "transform-object-rest-spread",
       "transform-class-properties"
-    ]
+    ],
   }

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Home from '../home/Home';
+import Gameboard from '../gameboard/Gameboard';
 
 
 class App extends PureComponent{
@@ -12,7 +12,7 @@ class App extends PureComponent{
         <Router>
           <div>
             <Switch>
-              <Route exact path='/' component={Home}/>
+              <Route exact path='/' component={Gameboard}/>
               <Redirect to='/'/>
             </Switch>
           </div>
