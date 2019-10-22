@@ -7,7 +7,13 @@ class GameboardTile extends Component{
     const { data } = this.props;
     return (
       <div className="tileContainer">
-        <div className="innerTileDiv">{data.id}</div>
+        <div className="innerTileDiv">
+          {data.img ?
+            <img className='img' src={data.img}/>
+            : 
+            null
+          }
+        </div>
       </div>
     );
   }

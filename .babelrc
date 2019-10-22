@@ -7,11 +7,12 @@
           }
         }
       ],
-      "@babel/env",
-      "@babel/react",
+      "react",
+      // "@babel/env",
+      // "@babel/react",
     ],
     "plugins": [
       "transform-object-rest-spread",
       "transform-class-properties"
-    ]
+    ],
   }
