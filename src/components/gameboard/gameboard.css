@@ -1,4 +1,5 @@
 #gameboard{
+    background-color: rgb(22, 168, 54);
     display: grid;
     width: 40%;
     margin: 0 auto;
